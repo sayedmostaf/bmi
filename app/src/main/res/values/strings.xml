@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BMI Calculator</string>
+    <string name="unit">cm</string>
+    <string name="female_text">FEMALE</string>
+    <string name="age">AGE</string>
+    <string name="base_height">170</string>
+    <string name="base_weight">55</string>
+    <string name="base_age">22</string>
+    <string name="todo">TODO</string>
+    <string name="height">HEIGHT</string>
+    <string name="calculate">Calculate</string>
+    <string name="weight">WEIGHT</string>
+    <string name="male">MALE</string>
+    <string name="header_text">BMI CALCULATOR</string>
+</resources>
