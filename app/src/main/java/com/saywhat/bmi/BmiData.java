@@ -2,13 +2,15 @@ package com.saywhat.bmi;
 
 public class BmiData {
     private float height, weight, bmiResult;
+    boolean isMale;
     private String category, tips;
     private int imageIndex;
     private int[] categoryColors;
 
-    public BmiData(float height, float weight) {
+    public BmiData(float height, float weight, boolean isMale) {
         this.height = height / 100;
         this.weight = weight;
+        this.isMale = isMale;
         calculateBmi();
         determineCategory();
     }

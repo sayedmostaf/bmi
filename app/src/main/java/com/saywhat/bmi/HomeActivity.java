@@ -13,10 +13,9 @@ import androidx.appcompat.app.AppCompatActivity;
 public class HomeActivity extends AppCompatActivity {
 
     TextView header, tips, bmiDisplay, categoryDisplay;
-    Button backButton;
     Intent intent;
     ImageView stateImageView;
-    String height, weight;
+    String height, weight, gender;
     RelativeLayout bgLayout;
 
     @SuppressLint("SetTextI18n")
@@ -34,7 +33,10 @@ public class HomeActivity extends AppCompatActivity {
 
         height = intent.getStringExtra("height");
         weight = intent.getStringExtra("weight");
-        BmiData bmiData = new BmiData(Float.parseFloat(height), Float.parseFloat(weight));
+        gender = intent.getStringExtra("gender");
+        boolean isMale = gender.equalsIgnoreCase("male");
+
+        BmiData bmiData = new BmiData(Float.parseFloat(height), Float.parseFloat(weight), isMale);
 
         int[] maleImages = {
                 R.drawable.servere_thinness,
@@ -45,6 +47,16 @@ public class HomeActivity extends AppCompatActivity {
                 R.drawable.obesei,
                 R.drawable.obseeii,
                 R.drawable.obeseiii
+        };
+        int[] femaleImages = {
+                R.drawable.male_servere,
+                R.drawable.male_modrate,
+                R.drawable.male_modrate,
+                R.drawable.male_normal,
+                R.drawable.male_overweight,
+                R.drawable.male_obesei,
+                R.drawable.male_obeseii,
+                R.drawable.male_obeseii
         };
 
         int[] categoryColors = {
@@ -62,7 +74,7 @@ public class HomeActivity extends AppCompatActivity {
         categoryDisplay.setText(bmiData.getCategory());
         tips.setText(bmiData.getTips());
 
-        stateImageView.setImageResource(maleImages[bmiData.getImageIndex()]);
+        stateImageView.setImageResource((!isMale) ? maleImages[bmiData.getImageIndex()] : femaleImages[bmiData.getImageIndex()]);
         int color = categoryColors[bmiData.getImageIndex()];
         categoryDisplay.setTextColor(color);
         tips.setTextColor(color);
