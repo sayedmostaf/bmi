@@ -20,5 +20,7 @@
     <color name="overweight">#0093A1</color> <!-- Gold -->
     <color name="obese_class_1">#FF6347</color> <!-- Tomato -->
     <color name="obese_class_2">#FF4500</color> <!-- OrangeRed -->
-    <color name="obese_class_3">#B22222</color> <!-- Firebrick -->
+    <color name="obese_class_3">#B22222</color>
+    <color name="hintColor">#85868F</color>
+    <color name="on_primary_bg">#181A3D</color> <!-- Firebrick -->
 </resources>

@@ -5,22 +5,24 @@
     android:layout_height="match_parent"
     android:background="@color/bg"
     tools:context=".HomeActivity">
+
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#181A3D"
+        android:background="@color/on_primary_bg"
         android:elevation="20dp">
 
-    <TextView
-        android:id="@+id/header"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/header_text"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/header_text"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
     </androidx.appcompat.widget.Toolbar>
+
     <RelativeLayout
         android:id="@+id/content_layout"
         android:layout_width="match_parent"
@@ -38,16 +40,17 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/bmi_calc"
             android:layout_centerHorizontal="true"
-            android:text="22.1"
+            android:text="@string/_22_1"
             android:textColor="@color/white"
             android:textSize="50sp"
             android:textStyle="bold" />
+
         <ImageView
             android:id="@+id/bmi_image"
             android:layout_width="wrap_content"
             android:layout_height="220dp"
-            android:layout_centerHorizontal="true"
             android:layout_below="@+id/state"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp" />
 
         <TextView
@@ -56,7 +59,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="10dp"
-            android:text="NORMAL"
+            android:text="@string/normal"
             android:textColor="@color/white"
             android:textSize="30sp"
             android:textStyle="bold" />
@@ -68,8 +71,8 @@
             android:layout_below="@+id/bmi_image"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
-            android:text="Normal BMI Range:"
-            android:textColor="#85868F"
+            android:text="@string/normal_bmi_range"
+            android:textColor="@color/hintColor"
             android:textSize="22sp" />
 
         <TextView
@@ -79,7 +82,7 @@
             android:layout_below="@+id/text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
-            android:text="18.5 - 25 kg/m2"
+            android:text="@string/_18_5_25_kg_m2"
             android:textColor="@color/white"
             android:textSize="22sp" />
 
@@ -90,7 +93,7 @@
             android:layout_below="@+id/range"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="25dp"
-            android:text="You have a normal body \nweight. Good job!"
+            android:text="@string/you_have_a_normal_body_nweight_good_job"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="22sp" />

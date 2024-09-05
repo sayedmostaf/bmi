@@ -22,7 +22,7 @@
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#181A3D"
+        android:background="@color/on_primary_bg"
         android:elevation="20dp">
 
         <TextView
@@ -127,7 +127,7 @@
             android:fontFamily="@font/railway"
             android:text="@string/height"
             android:textAlignment="center"
-            android:textColor="#85868F"
+            android:textColor="@color/hintColor"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -151,7 +151,7 @@
             android:layout_toEndOf="@id/current_height"
             android:fontFamily="@font/railway"
             android:text="@string/unit"
-            android:textColor="#85868F"
+            android:textColor="@color/hintColor"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -206,7 +206,7 @@
             android:fontFamily="@font/railway"
             android:text="@string/weight"
             android:textAlignment="center"
-            android:textColor="#85868F"
+            android:textColor="@color/hintColor"
             android:textSize="18sp"
             android:textStyle="bold">
 
@@ -292,7 +292,7 @@
             android:fontFamily="@font/railway"
             android:text="@string/age"
             android:textAlignment="center"
-            android:textColor="#85868F"
+            android:textColor="@color/hintColor"
             android:textSize="18sp"
             android:textStyle="bold">
 
