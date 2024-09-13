@@ -29,4 +29,7 @@
     <string name="normal_bmi_range">Normal BMI Range:</string>
     <string name="_18_5_25_kg_m2">18.5 - 25 kg/m2</string>
     <string name="you_have_a_normal_body_nweight_good_job">You have a normal body \nweight. Good job!</string>
+    <string name="user_medical_history">User Medical History</string>
+    <string name="your_medical_history_leads_to">Your medical history leads to...</string>
+    <string name="your_medical_history_leads_to_">Your medical history leads to...</string>
 </resources>

@@ -1,25 +1,11 @@
-package com.saywhat.bmi.History;
+package com.saywhat.bmi;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
-import com.saywhat.bmi.R;
-
 import android.view.View;
 import android.widget.ExpandableListView;
 import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 
 public class Overweight_causes extends AppCompatActivity {
 

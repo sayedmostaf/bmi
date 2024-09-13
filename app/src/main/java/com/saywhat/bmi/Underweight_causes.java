@@ -1,15 +1,10 @@
-package com.saywhat.bmi.History;
+package com.saywhat.bmi;
 
 import android.os.Bundle;
 import android.widget.ExpandableListView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
-import com.saywhat.bmi.R;
 
 public class Underweight_causes extends AppCompatActivity {
 

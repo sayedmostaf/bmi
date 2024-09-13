@@ -23,8 +23,8 @@
             android:paddingLeft="16dp"
             android:paddingRight="16dp"
             android:textSize="20sp"
+            android:gravity="start"
             android:textColor="@color/white"
-            android:layout_gravity="left"
             android:layout_marginStart="15dp"/>
 
     </LinearLayout>
