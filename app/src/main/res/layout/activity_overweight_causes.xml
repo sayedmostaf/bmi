@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".History.Overweight_causes"
+    android:orientation="vertical"
+    android:background="@color/bg">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg"
+        android:elevation="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="User Medical History"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ExpandableListView
+        android:id="@+id/expandableListView_over"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:groupIndicator="@null"
+        android:dividerHeight="17dp"
+        android:divider="@color/bg"
+        android:childDivider="@color/on_primary_bg" />
+
+    <TextView
+        android:id="@+id/overweight_lead_to"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Your medical history leads to..."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:layout_marginTop="27dp"/>
+
+</LinearLayout>
